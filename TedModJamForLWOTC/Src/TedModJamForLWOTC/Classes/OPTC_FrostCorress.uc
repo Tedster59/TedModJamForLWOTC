@@ -94,20 +94,13 @@ static function AdjustFrostCorressAbility(X2AbilityTemplate Template)
     //  Check if the Ability Template was successfully found by the manager.
     if (Template != none)
     {
-        //  Remove the exclusions that let Frost Necromancers uses these abilities while burning or disoriented
-		foreach Template.AbilityShooterConditions(Condition)
-        {
-            if (Condition != none)
-            {
-                UnitEffect = X2Condition_UnitEffects(Condition);
-                if (UnitEffect != none)
-                {
-					UnitEffect.AddExcludeEffect(class'X2StatusEffects'.default.BurningName, 'AA_UnitIsBurning');
-					UnitEffect.AddExcludeEffect(class'X2AbilityTemplateManager'.default.DisorientedName, 'AA_UnitIsDisoriented');
-                }
-            }
-        }
-    }
+
+		UnitEffect = new class'X2Condition_UnitEffects';
+		UnitEffect.AddExcludeEffect(class'X2StatusEffects'.default.BurningName, 'AA_UnitIsBurning');
+		UnitEffect.AddExcludeEffect(class'X2AbilityTemplateManager'.default.DisorientedName, 'AA_UnitIsDisoriented');
+
+		Template.AbilityShooterConditions.AddItem(UnitEffect);
+	}
 }
 
 static function AdjustFrostCorressAbilityActions(X2AbilityTemplate Template)

@@ -20,7 +20,6 @@ static event OnPostTemplatesCreated()
 	AdjustCCSAbility(AbilityTemplateManager.FindAbilityTemplate('ABBPistolCloseCombatSpecialist'));
 	AdjustCCSAbility(AbilityTemplateManager.FindAbilityTemplate('DP_CQCSupremacyAttack'));
 	AdjustCCSAbility(AbilityTemplateManager.FindAbilityTemplate('DP_CQCSupremacyAttackSecondary'));
-	AdjustCCSAbility(AbilityTemplateManager.FindAbilityTemplate('MZVoltaicArcAttack'));
 	AdjustAidProtocolAbility(AbilityTemplateManager.FindAbilityTemplate('AidProtocol'));
 	AdjustShadowstepAbility(AbilityTemplateManager.FindAbilityTemplate('Shadowstep'));
 }
