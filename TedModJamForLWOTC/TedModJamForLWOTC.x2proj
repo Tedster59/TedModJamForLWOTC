@@ -1,0 +1,1635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>16e64943-09ec-4f7b-a591-1a8ee0ae83bf</Guid>
+    <Name>TedModJamForLWOTC</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>TedModJamForLWOTC</AssemblyName>
+    <RootNamespace>TedModJamForLWOTC</RootNamespace>
+    <ProjectGuid>{444a3174-690c-4c1e-a23f-daa3cfd8f6de}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Config\Ability To Slot Reassignment\" />
+    <Folder Include="Config\Additional Ammo Types\" />
+    <Folder Include="Config\Additional Vest Types\" />
+    <Folder Include="Config\Advent Assault Troopers\" />
+    <Folder Include="Config\Advent Cryo Priest Standalone\" />
+    <Folder Include="Config\Advent Duelist\" />
+    <Folder Include="Config\Advent Medic\" />
+    <Folder Include="Config\Advent Military Assault Mec\" />
+    <Folder Include="Config\Advent Psi Ops\" />
+    <Folder Include="Config\Advent Sniper\" />
+    <Folder Include="Config\Advent Warlock\" />
+    <Folder Include="Config\Autopistol Overhaul\" />
+    <Folder Include="Config\Ballistic Shields\" />
+    <Folder Include="Config\Bayonets\" />
+    <Folder Include="Config\Bio Division 2.0\" />
+    <Folder Include="Config\Bitterfrost Protocol\" />
+    <Folder Include="Config\Celatid Alien\" />
+    <Folder Include="Config\Corrosive Rounds\" />
+    <Folder Include="Config\Cost-Based Ability Colors\" />
+    <Folder Include="Config\Custodian Pack\" />
+    <Folder Include="Config\Disposable Rocket Launchers\" />
+    <Folder Include="Config\Dual Wield Melee\" />
+    <Folder Include="Config\Dual Wielded Pistols 2.0\" />
+    <Folder Include="Config\EU Psi Armor\" />
+    <Folder Include="Config\Explosives Destroy Corpses\" />
+    <Folder Include="Config\Flame Viper\" />
+    <Folder Include="Config\Frost Legion\" />
+    <Folder Include="Config\Frost Legion\AddFollowersToABA\" />
+    <Folder Include="Config\Frost Legion\AddFollowersToAshlynne\" />
+    <Folder Include="Config\Frost Legion\AddFollowersToClaus\" />
+    <Folder Include="Config\Frost Legion\AddFollowersToCX\" />
+    <Folder Include="Config\Frost Legion\AddFollowersToLeaderEnemyBoss\" />
+    <Folder Include="Config\Frost Legion\Followers\" />
+    <Folder Include="Config\Frost Legion\Followers\Advent\" />
+    <Folder Include="Config\Frost Legion\Followers\Alien\" />
+    <Folder Include="Config\Frost Legion\Followers\Robotic\" />
+    <Folder Include="Config\Frost Legion\Leaders\" />
+    <Folder Include="Config\Frost Legion\Summons\" />
+    <Folder Include="Config\Gene Mods\" />
+    <Folder Include="Config\Gun Raise Animation\" />
+    <Folder Include="Config\Immolator + Chemthrower Abilities\" />
+    <Folder Include="Config\Immolator Overhaul\" />
+    <Folder Include="Config\Iridar's Advent Arsenal\" />
+    <Folder Include="Config\Iridar's Laser and Coil Weapons\" />
+    <Folder Include="Config\Jet Packs\" />
+    <Folder Include="Config\Jump Jets\" />
+    <Folder Include="Config\Mitzruti's Perk Pack\" />
+    <Folder Include="Config\Muton Destroyer\" />
+    <Folder Include="Config\Muton Harriers\" />
+    <Folder Include="Config\Muton Hunters\" />
+    <Folder Include="Config\Bstar%27s Perk Pack" />
+    <Folder Include="Config\More Engineering Repair Slots" />
+    <Folder Include="Config\AP Grenades" />
+    <Folder Include="Config\Advent Armors LWOTC" />
+    <Folder Include="Config\Loot Indicator Extended" />
+    <Folder Include="Config\Meld for LWOTC" />
+    <Folder Include="Config\Combined Workshop and Lab" />
+    <Folder Include="Config\Dynamic Deployment" />
+    <Folder Include="Config\Fuller Override" />
+    <Folder Include="Config\Ted Mod Jam Fixes" />
+    <Folder Include="Config\YAF1 Autopsy Required" />
+    <Folder Include="Config\YAF1" />
+    <Folder Include="Config\Pathfinders\" />
+    <Folder Include="Config\Playable Titan Armor\" />
+    <Folder Include="Config\Psionics Overhaul V3\" />
+    <Folder Include="Config\Purge Priests\" />
+    <Folder Include="Config\Rocket Launchers\" />
+    <Folder Include="Config\Scouting Protocol\" />
+    <Folder Include="Config\Spark Arsenal\" />
+    <Folder Include="Config\SPARK Launchers Redux\" />
+    <Folder Include="Config\Spart's Sawed-Off Shotgun\" />
+    <Folder Include="Config\System Infiltration\" />
+    <Folder Include="Config\Tactical X4\" />
+    <Folder Include="Config\The Drome Dome\" />
+    <Folder Include="Config\True Primary Secondaries\" />
+    <Folder Include="Config\Underbarrel Weapons\" />
+    <Folder Include="Config\Wrecking Ball\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\TedModJamForLWOTC\" />
+    <Folder Include="Src\TedModJamForLWOTC\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Ability To Slot Reassignment\XComAbilityToSlotReassignment.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ability To Slot Reassignment\XComLoadoutApi.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ability To Slot Reassignment\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Ammo Types\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Ammo Types\XComMZAmmoMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Ammo Types\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Vest Types\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Vest Types\XComMZVestMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Additional Vest Types\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Armors LWOTC\XCom_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Assault Troopers\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Assault Troopers\XComAssaultTrooper.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Assault Troopers\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Assault Troopers\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Assault Troopers\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComNew2020Icons.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Cryo Priest Standalone\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComAbilityToSlotReassignment.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComAdventDuelist_WoTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComMagTalon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Duelist\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Medic\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Medic\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Medic\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Medic\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XcomAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XcomGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComLW_AlienVariations.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Military Assault Mec\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComACData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Psi Ops\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComHarbingerRifle.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Sniper\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComAdvWarlock.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Advent Warlock\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\AP Grenades\XComAPGrenades.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\AP Grenades\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Autopistol Overhaul\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Autopistol Overhaul\XComWOTCAutopistolRebalance.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComRider.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComShields.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ballistic Shields\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bayonets\XComBayonet.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bayonets\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComBDData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComBioMecSubArmorCompatibleClasses.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComDisableAliens.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComSchedules.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bio Division 2.0\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComLW_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComMZAmmoMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComStrategyTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bitterfrost Protocol\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Bstar%27s Perk Pack\XComBstarsPerkPack.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Celatid Alien\XComCelatidData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Celatid Alien\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Celatid Alien\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Celatid Alien\XComSchedules.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Celatid Alien\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Combined Workshop and Lab\XComCombiWorkLab.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Corrosive Rounds\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Cost-Based Ability Colors\XComWOTC_CostBasedAbilityColors.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomAdvent_Courier.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomCustodianWeapon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomCustodian_Xcom_Items.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComExaltedShield.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomExaltedWeapon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComHyperDriveVestIncompatibleClasses.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomMetionAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomMetion_Shotgun.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XcomMk2Custodian.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Custodian Pack\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComDisposableLaunchers.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComScatter.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Disposable Rocket Launchers\XComWOTCDisposableLaunchers_DEFAULT.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wield Melee\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wield Melee\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wielded Pistols 2.0\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wielded Pistols 2.0\XComDualWieldedPistols.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wielded Pistols 2.0\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dual Wielded Pistols 2.0\XComWOTCOpenWeaponRestrictions.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dynamic Deployment\XcomDynamicDeployment.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Dynamic Deployment\XComStrategyTuning.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\EU Psi Armor\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\EU Psi Armor\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\EU Psi Armor\XComPsiArmorLW.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\EU Psi Armor\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Explosives Destroy Corpses\XComEDC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Flame Viper\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Flame Viper\XComAshFlameViper.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Flame Viper\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Flame Viper\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Flame Viper\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToABA\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToAshlynne\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToClaus\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToCX\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToCX\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\AddFollowersToLeaderEnemyBoss\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Followers\Advent\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Followers\Alien\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Followers\Robotic\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Followers\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Leaders\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Leaders\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Summons\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\Summons\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComDisableAliens.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComEnemyReskinnerRedux.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComFrostDivision.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComFrostDivision_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComImmunities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComMZAmmoMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Frost Legion\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Fuller Override\XComLWOTC_Fuller_Override.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Gene Mods\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Gene Mods\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Gun Raise Animation\XComAnims.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Gun Raise Animation\XComCanHaveGunRaiseAnimation.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Gun Raise Animation\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator + Chemthrower Abilities\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator + Chemthrower Abilities\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator + Chemthrower Abilities\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator + Chemthrower Abilities\XComLW_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator + Chemthrower Abilities\XComMZChemthrower.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator Overhaul\XComAuxiliaryWeapons.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator Overhaul\XComFlamerTLE.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator Overhaul\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator Overhaul\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Immolator Overhaul\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Iridar%27s Advent Arsenal\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Iridar%27s Laser and Coil Weapons\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Iridar%27s Laser and Coil Weapons\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Iridar%27s Laser and Coil Weapons\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Iridar%27s Laser and Coil Weapons\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jet Packs\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jet Packs\XComJetPacks.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jet Packs\XComJetPacksIncompatibleClasses.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jet Packs\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jet Packs\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jump Jets\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Jump Jets\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Loot Indicator Extended\XcomWOTCLootIndicator_Extended.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Meld for LWOTC\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Mitzruti%27s Perk Pack\XComMZPerkPack.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Mitzruti%27s Perk Pack\XComMZPerkWeapons.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\More Engineering Repair Slots\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Destroyer\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Destroyer\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Destroyer\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Destroyer\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Destroyer\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XcomGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XcomMutonHarrier.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Harriers\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Hunters\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Muton Hunters\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XComAI.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XcomGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XcomPathfinderAdvent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XcomPathfinderXcom.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Pathfinders\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Playable Titan Armor\XComArmorContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Playable Titan Armor\XComContent.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Playable Titan Armor\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Playable Titan Armor\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComGameData_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComGrantWeaponWithAbility.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComIriPsiOverhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComLatentPsionics.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComMZPerkPack.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Psionics Overhaul V3\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XcomGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XcomPurgePriests.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComPurgePriestXComItems.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Purge Priests\XCOM_Customize_This_Mod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComGameBoard.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComRocketLaunchers.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComRockets.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Rocket Launchers\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Scouting Protocol\XComScoutingProtocolWOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComArtilleryCannon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComAutogunHeavyWeapon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComAuxiliaryWeapons.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComElectroPulse.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComIncinerators.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComKineticStrikeModule.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComOrdnanceLaunchers.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComRestorativeMist.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spark Arsenal\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\SPARK Launchers Redux\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\SPARK Launchers Redux\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\SPARK Launchers Redux\XComSPARKLaunchers.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spart%27s Sawed-Off Shotgun\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spart%27s Sawed-Off Shotgun\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spart%27s Sawed-Off Shotgun\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spart%27s Sawed-Off Shotgun\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Spart%27s Sawed-Off Shotgun\XComWhippitShotgun.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\System Infiltration\XComHackerLaptop.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\System Infiltration\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\System Infiltration\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\System Infiltration\XComSystemInfiltration.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Tactical X4\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ted Mod Jam Fixes\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ted Mod Jam Fixes\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Ted Mod Jam Fixes\XComRider.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\The Drome Dome\XComDromeDome.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\The Drome Dome\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\The Drome Dome\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\The Drome Dome\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\True Primary Secondaries\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\True Primary Secondaries\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\True Primary Secondaries\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\True Primary Secondaries\XComTruePrimarySecondaries.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\True Primary Secondaries\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComLW_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComUnderbarrel.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Underbarrel Weapons\XComWOTCOpenWeaponRestrictions.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Wrecking Ball\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XcomAbilityConfigsOPTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComAbilityEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComClassData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEncounterLists.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_CharacterStats.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_WeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComImprovedHeavyTargeting.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_AlienPack.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_Outposts.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_Overhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_Toolbox.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComPromotionUIMod.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComTedPsiOverhaul.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComTemplateCreator.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\YAF1 Autopsy Required\XcomAutopsyRequiredConfig.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\YAF1\XcomGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\LatentPsionicsUnlock.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\LatentPsionicsUnlock.rus">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WOTCDisposableLaunchers.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WOTCDisposableLaunchers.rus">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WotC_Gameplay_GeneModding.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WotC_Gameplay_GeneModding.RUS">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.RUS">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\TedModJamForLWOTC\Classes\BitterfrostHelper.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\GrantWeaponWithAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\ImprovedHeavyTargetingLWOTC.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCAirdrop.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCBioMecSubArmor.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCHyperdriveVest.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCIriSerialAnim.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCJetPacks.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCJustice.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCPsiPull.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTCPullFromHarm.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_BackburnerAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_BeamSweep.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Bind.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Bullseye.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_BUs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CCS.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ChemthrowerSuppression.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ChosenKidnap.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CustodianMelee.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CustodianReinforcements.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_DestroyerPullAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_DogpileMelee.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_FlamethrowerAbilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_FrostCorress.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_FrostMarkTarget.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_FrostTech.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_GetOverHere.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_GuaranteedHit.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_LaserAndMagGrenades.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_MeltingStreamBlazingStorm.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ModJamAI.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_POI.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Puppeteer.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Rainmaker.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ResistanceCommunications.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Rockets.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_RussianRoulette.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_SawedOffOverwatch.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ScanningProtocol.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ShieldAbilities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ShieldBash.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_SnakeSpit.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_SolaceLW.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_SoulSteal.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_SystemInfiltration.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_TakeDown.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ThisOnesMine.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Underbarrels.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_VolatileMix.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_X2Effect_AreaSuppression.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\UIEventNoticesTactical_Ripple.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\UIUtilities_Image_Ripple.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\UnderBarrelsAsRandomDrops.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_ChemthrowerSuppression.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_ScanningProtocol.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_ShieldBash.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_BioDemonweaveVest.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_BioMecSubArmor.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_BioSabers.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_CustodianAPRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_FlameViperVest.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_FlashbangResistance.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_FrostDivisionChill.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_FrostLegion.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_FrostTech.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_MutonHarriers.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_PsiArmor_LW.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_ReaperHack.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_SealedUndersuit_LW.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_ShadowOpsCharge.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_ShieldStats.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_SparkHackDefense.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_TooBigForPull.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_Underbarrels.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_WraithVest.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_XComAssaultStun.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_XComBioShield.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Character_CryoPriestM1.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Character_CryoRocketeer.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Character_PrototypeGatlingMec.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_GRA_CharacterRestriction.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_GRA_ClassRestriction.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_HasPurchasedTechUnlock_BU.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_IsTooHeavyForPull.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_MetionBattlesuitEquipped.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_NotItsOwnTurn.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_WOTC_APA_ReaperHack.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2DownloadableContentInfo_TedModJamForLWOTC.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_AreaSuppression.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_CannotTargetChosen.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_CannotTargetShadowstep.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_CustodianAPRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_DamageTakenAdjust.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_DefendingDamage.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_GrantCharges.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_IceShield_MJ.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_PsiRipple.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_Rainmaker_ModJam.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_Resilience.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_RussianRoulette.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_ShieldGuard.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_SpectralFrostZombie.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_TooBigForPull.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_WOTC_APA_AddReaperHack.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2EventListener_Psi.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_AssaultMECCorpse.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_Backburner.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioAlloyPlating.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioCyaneaSuit.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioDemonweaveVest.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioDivisionCorpses.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioMecSubArmor.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_BioSabers.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_CryoPriestCorpse.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_CustodianAPRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_ExaltedCustodianGrandmasterRifle.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_ExaltedCustodianPistol.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_HarbingerRifle.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_InsulatedWeave.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_MagTalon.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_NeurotoxinGrenades.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_PrototypeKSM.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_PsiArmor_LW.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_PurgePlating.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_PurgePriestCorpse.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_RippleRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_SeethingRounds.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_Underbarrels.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_WhippitShotgun.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_XComBioShield.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_XComBioStunLance.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_XComPurgeGun.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StatusEffects_RipplingRifle.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_AdditionalAmmoTypesProjects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_AdditionalVestTypesProjects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_AssaultTroopersTechs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_BioDivisionResearch.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_BitterfrostProtocolProjects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_BlackFlameGrenadeProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_ConcussionGrenadeProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_CorrosiveRoundsProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_CryoPriestAutopsy.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_CustodianPackTechs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_DestroyerVestProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_FlameScaleVestProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_GatlingMecAutopsy.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_JetPacksTechs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_JumpJetsTech.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_PhantomSlayerRoundsProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_PsiArmorTech.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_PurgePriestsTechs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_RenderProjects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_RippleRoundsProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_SabotRoundsProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_SparkLauncherProjects.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_UnderbarrelProjectsuc.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_WraithVestProject.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
