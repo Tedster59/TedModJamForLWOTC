@@ -8,14 +8,12 @@ function bool IsThisEffectBetterThanExistingEffect(const out XComGameState_Effec
 	local X2Effect_PsiRipple ExistingPsiRippleEffectTemplate;
 
 	ExistingPsiRippleEffectTemplate = X2Effect_PsiRipple(ExistingEffect.GetX2Effect());
-	`assert( ExistingPsiRippleEffectTemplate != None );
 
-	if( ExistingPsiRippleEffectTemplate.GetPsiRippleDamage().EffectDamageValue.Damage < GetPsiRippleDamage().EffectDamageValue.Damage )
+	if( ExistingPsiRippleEffectTemplate != None && ExistingPsiRippleEffectTemplate.GetPsiRippleDamage().EffectDamageValue.Damage > GetPsiRippleDamage().EffectDamageValue.Damage )
 	{
-		return true;
+		return false;
 	}
-
-	return false;
+	return true;
 }
 
 //simulated function ApplyEffectToWorld(const out EffectAppliedData ApplyEffectParameters, XComGameState NewGameState)
@@ -38,7 +36,6 @@ simulated function SetPsiRippleDamage(int Damage, int Spread, name DamageType)
 	PsiRippleDamage.DamageTag = self.Name;
 
 	ApplyOnTick.AddItem(PsiRippleDamage);
-	`assert( ApplyOnTick.Length == 1 );
 }
 
 simulated function X2Effect_ApplyWeaponDamage GetPsiRippleDamage()
