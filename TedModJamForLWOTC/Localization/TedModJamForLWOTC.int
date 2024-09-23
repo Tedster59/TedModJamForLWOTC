@@ -1,0 +1,6 @@
+[X2StatusEffects_RipplingRifle]
+TJPsiRippleFriendlyName="Psionic Rippling"
+TJPsiRippleFriendlyDesc="Psionically rippling units take damage over time and can infect nearby allies with the same effect"
+TJPsiRippleEffectAcquiredString="<XGParam:StrValue0/!UnitName/> is psionically rippling."
+TJPsiRippleEffectTickedString="<XGParam:StrValue0/!UnitName/> is still psionically rippling."
+TJPsiRippleEffectLostString="<XGParam:StrValue0/!UnitName/> is no longer psionically rippling."

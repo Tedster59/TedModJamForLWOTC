@@ -12,11 +12,11 @@ var config array<name> PSIRIPPLE_SPREAD_ALLOWED_UNIT_TYPES;
 var config int PSIRIPPLE_SPREAD_MAX_ALLOWED;
 
 
-var localized string PsiRippleFriendlyName;
-var localized string PsiRippleFriendlyDesc;
-var localized string PsiRippleEffectAcquiredString;
-var localized string PsiRippleEffectTickedString;
-var localized string PsiRippleEffectLostString;
+var localized string TJPsiRippleFriendlyName;
+var localized string TJPsiRippleFriendlyDesc;
+var localized string TJPsiRippleEffectAcquiredString;
+var localized string TJPsiRippleEffectTickedString;
+var localized string TJPsiRippleEffectLostString;
 
 
 var config string PsiRippleEnteredParticle_Name;
@@ -35,7 +35,7 @@ static function X2Effect_PsiRipple CreatePsiRippleStatusEffect(int DamagePerTick
 	PsiRippleEffect = new class'X2Effect_PsiRipple';
 	PsiRippleEffect.EffectName = default.PsiRippleName;
 	PsiRippleEffect.BuildPersistentEffect(default.PSIRIPPLE_TURNS,, false,,eGameRule_PlayerTurnBegin);
-	PsiRippleEffect.SetDisplayInfo(ePerkBuff_Penalty, default.PsiRippleFriendlyName, default.PsiRippleFriendlyDesc, "img:///WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling"); //Texture2D'WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling'
+	PsiRippleEffect.SetDisplayInfo(ePerkBuff_Penalty, default.TJPsiRippleFriendlyName, default.TJPsiRippleFriendlyDesc, "img:///WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling"); //Texture2D'WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling'
 	PsiRippleEffect.SetPsiRippleDamage(DamagePerTick, DamageSpreadPerTick, 'Psi');
 	PsiRippleEffect.VisualizationFn = PsiRippleVisualization;
 	PsiRippleEffect.EffectTickedVisualizationFn = PsiRippleVisualizationTicked;
@@ -194,10 +194,10 @@ static function PsiRippleVisualization(XComGameState VisualizeGameState, out Vis
 	if (!ActionMetadata.StateObject_NewState.IsA('XComGameState_Unit'))
 		return;
 
-	AddEffectSoundAndFlyOverToTrack(ActionMetadata, VisualizeGameState.GetContext(), default.PsiRippleFriendlyName, 'PsiRipple', eColor_Bad, class'UIUtilities_Image_Ripple'.const.UnitStatus_PsiRipple);
+	AddEffectSoundAndFlyOverToTrack(ActionMetadata, VisualizeGameState.GetContext(), default.TJPsiRippleFriendlyName, 'PsiRipple', eColor_Bad, class'UIUtilities_Image_Ripple'.const.UnitStatus_PsiRipple);
 	AddEffectMessageToTrack(
 		ActionMetadata,
-		default.PsiRippleEffectAcquiredString,
+		default.TJPsiRippleEffectAcquiredString,
 		VisualizeGameState.GetContext(),
 		class'UIEventNoticesTactical_Ripple'.default.PsiRippleTitle,
 		"img:///WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling",
@@ -219,7 +219,7 @@ static function PsiRippleVisualizationTicked(XComGameState VisualizeGameState, o
 
 	AddEffectMessageToTrack(
 		ActionMetadata,
-		default.PsiRippleEffectTickedString,
+		default.TJPsiRippleEffectTickedString,
 		VisualizeGameState.GetContext(),
 		class'UIEventNoticesTactical_Ripple'.default.PsiRippleTitle,
 		"img:///WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling",
@@ -241,7 +241,7 @@ static function PsiRippleVisualizationRemoved(XComGameState VisualizeGameState, 
 
 	AddEffectMessageToTrack(
 		ActionMetadata,
-		default.PsiRippleEffectLostString,
+		default.TJPsiRippleEffectLostString,
 		VisualizeGameState.GetContext(),
 		class'UIEventNoticesTactical_Ripple'.default.PsiRippleTitle,
 		"img:///WoTC_Muton_Harrier_UI.UIPerk_Psionic_Rippling",
