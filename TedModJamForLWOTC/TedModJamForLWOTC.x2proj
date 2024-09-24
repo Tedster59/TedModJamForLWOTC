@@ -1162,6 +1162,9 @@
     <Content Include="Localization\WOTCDisposableLaunchers.rus">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Localization\WOTCIridarTemplateMaster.int">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Localization\WotC_Gameplay_GeneModding.int">
       <SubType>Content</SubType>
     </Content>
