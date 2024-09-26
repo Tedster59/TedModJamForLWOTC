@@ -3,6 +3,7 @@ class X2EventListener_Psi Extends X2EventListener config(TedPsiOverhaul);
 var config int MaxPsiRank;
 var config int NumKillsPerPostRank;
 var config int NumPsiAbilitiesPerRank;
+var config bool bAlwaysRankUp;
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -70,16 +71,16 @@ static function EventListenerReturn OnPsiProjectCompleted(
 
 	for (iRank = 0; iRank < NumRanks; iRank++)
 	{
-		`Log("Psi class ability length at rank" @iRank @":" @ SoldierClassTemplate.default.SoldierRanks[iRank].AbilitySlots.Length,,'TedLog');
+		`Log("Psi class ability length at rank" @iRank @":" @ SoldierClassTemplate.SoldierRanks[iRank].AbilitySlots.Length,,'TedLog');
 		// This assumes Psi Ops have pistol row!
-		for (iBranch = 0; iBranch < SoldierClassTemplate.default.SoldierRanks[iRank].AbilitySlots.Length; iBranch++)
+		for (iBranch = 0; iBranch < SoldierClassTemplate.SoldierRanks[iRank].AbilitySlots.Length; iBranch++)
 		{
 			// Config to exclude XCOM/pistol rows
 			if(iBranch >= default.NumPsiAbilitiesPerRank)
 				continue;
 			PsiAbility.iRank = iRank;
 			PsiAbility.iBranch = iBranch;
-			if(SoldierClassTemplate.default.SoldierRanks[iRank].AbilitySlots[iBranch].AbilityType.AbilityName != '') // Added none-check
+			if(SoldierClassTemplate.SoldierRanks[iRank].AbilitySlots[iBranch].AbilityType.AbilityName != '') // Added none-check
 			{
 				PsiAbilityDeck.AddItem(PsiAbility);
 			}
@@ -122,23 +123,21 @@ static function EventListenerReturn LWCustomPsiRankUpCondition(
 		return ELR_NoInterrupt;
 	}
 
+	if(default.bAlwaysRankUp)
+	{
+		Tuple.Data[0].b = true;
+		Tuple.Data[1].b = true;
+		return ELR_NoInterrupt;
+	}
+
 	if(!UnitState.bRankedUp)
 	{
 		NumKills = UnitState.GetTotalNumKills();
 
 		if (UnitState.GetSoldierRank() < UnitState.GetSoldierClassTemplate().GetMaxConfiguredRank())
 		{
-			if (NumKills >= class'X2ExperienceConfig'.static.GetRequiredKills(UnitState.GetSoldierRank() + 1)
-				&& UnitState.GetStatus() != eStatus_PsiTesting
-				&& !UnitState.IsPsiTraining()
-				&& !UnitState.IsPsiAbilityTraining()
-				&& UnitState.IsAlive()
-				&& !UnitState.bCaptured)
-			{
-				Tuple.Data[0].b = true;
-				Tuple.Data[1].b = true;
-				return ELR_NoInterrupt;
-			}
+			// Let LWOTC promotions handle it from there.
+			return ELR_NoInterrupt;
 		}
 		else
 		{
