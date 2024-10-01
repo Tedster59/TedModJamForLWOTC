@@ -14,6 +14,8 @@ var config array<name> IncludedHumanoidTemplates;
 var config array<LootTable> ModJamStealCorpsesLootEntry;
 var config array<name> PULLANDBIND_EXCLUDE_CHARACTER_GROUPS;
 
+var config array<MissionDefinition> ReplacementMissionDefs;
+
 var config bool IMMOLATOR_DESTROYSLOOT;
 
 /// <summary>
@@ -577,6 +579,8 @@ static event OnPostTemplatesCreated()
 	FixSidewinderSMGs('PA_SidewinderGunMagnetic');
 	FixSidewinderSMGs('PA_SidewinderGunCoil');
 	FixSidewinderSMGs('PA_SidewinderGunBeam');
+
+	ReplaceSchedules();
 }
  
 static function AdjustFlamethrowerAbility(X2AbilityTemplate Template)
@@ -609,6 +613,7 @@ static function AdjustFlamethrowerAbility(X2AbilityTemplate Template)
             }
         }
     }
+
 }
 
 static function AdjustPullAbility(X2AbilityTemplate Template)
@@ -762,4 +767,95 @@ exec function Ted_CheckPsiAbilitiesLength()
 
 	class'Helpers'.static.OutputMsg("Selected Unit Psi Abilities Length:" @UnitState.PsiAbilities.Length);
 
+}
+
+
+static function bool ShouldUpdateMissionSpawningInfo(StateObjectReference MissionRef)
+{
+	local XComGameState_MissionSite MissionState;
+
+	MissionState = XComGameState_MissionSite(`XCOMHISTORY.GetGameStateForObjectID(MissionRef.ObjectID));
+
+	// Waterworld hardcode here
+	if(MissionState.GetMissionSource().DataName == 'MissionSource_Final')
+	{
+		`Log("Updating waterworld caching.",,'TedLog');
+		return true;
+	}
+
+	return false;
+}
+
+
+static function ReplaceSchedules()
+{
+	local XComTacticalMissionManager MissionManager;
+	local int MissionIdx;
+	local string MissionFamilyName;
+	local MissionDefinition CurrentMissionDef;
+
+	MissionManager = `TACTICALMISSIONMGR;
+
+	foreach default.ReplacementMissionDefs (CurrentMissionDef)
+	{
+		MissionFamilyName = CurrentMissionDef.MissionFamily;
+		MissionIdx = MissionManager.arrMissions.Find('MissionFamily', MissionFamilyName);
+		if(MissionIdx != -1)
+		{
+			if(MissionManager.arrMissions[MissionIdx].MissionFamily == CurrentMissionDef.MissionFamily && MissionManager.arrMissions[MissionIdx].sType == CurrentMissionDef.sType &&  MissionManager.arrMissions[MissionIdx].MissionName == CurrentMissionDef.MissionName)
+			{
+				MissionManager.arrMissions[MissionIdx].MissionSchedules = CurrentMissionDef.MissionSchedules;
+				`Log("Replacing mission def for mission " @CurrentMissionDef.MissionName @"Mission Family" @ CurrentMissionDef.MissionFamily,, 'WWLog');
+			}
+			else
+			{
+				`Log("replacement Mission Name or Mission sType didn't match for mission family" @CurrentMissionDef.MissionFamily,, 'WWLog'); 
+			}
+		}
+		else
+		{
+			`Log("Couldn't find base missiondef to replace for family" @CurrentMissionDef.MissionFamily,, 'WWLog');
+		}
+	}
+
+}
+
+
+static function bool UpdateMissionSpawningInfo(StateObjectReference MissionRef)
+{
+	local XComGameState_MissionSite MissionState;
+	local MissionDefinition MissionDef;
+	local XComGameState NewGameState;
+
+	MissionState = XComGameState_MissionSite(`XCOMHISTORY.GetGameStateForObjectID(MissionRef.ObjectID));
+
+	// Waterworld hardcoded here.
+	if(MissionState.GetMissionSource().DataName == 'MissionSource_Final')
+	{
+
+		// LW waterworld hardcode here:
+		`TACTICALMISSIONMGR.GetMissionDefinitionForType("GP_Fortress_LW", MissionDef);
+
+		// Hardcode checking for MJ schedules
+		if(instr(MissionState.SelectedMissionData.SelectedMissionScheduleName, "LW_TJ") != -1)
+		{
+			return false;
+		}
+
+		`Log("Mission Def schedule 1:" @MissionDef.MissionSchedules[0],, 'TedLog');
+
+		NewGameState = class'XComGameStateContext_ChangeContainer'.static.CreateChangeState("Update Mission Data");
+
+		MissionState = XComGameState_MissionSite(NewGameState.ModifyStateObject(class'XComGameState_MissionSite', MissionState.ObjectID));
+		MissionState.SelectedMissionData.SelectedMissionScheduleName = Name(MissionState.SelectedMissionData.SelectedMissionScheduleName $ "_TJ");
+		MissionState.GeneratedMission.Mission.MissionSchedules = MissionDef.MissionSchedules;
+	
+		`Log("Updating waterworld cached missiondef.",,'TedLog');
+
+		`GAMERULES.SubmitGameState(NewGameState);
+
+		return true;
+	}
+
+	return false;
 }
