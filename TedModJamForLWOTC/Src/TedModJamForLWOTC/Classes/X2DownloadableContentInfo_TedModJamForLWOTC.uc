@@ -565,6 +565,9 @@ static event OnPostTemplatesCreated()
 	AdjustPullAbility(AbilityTemplateManager.FindAbilityTemplate('GetOverHereAlly'));
 	`LOG("a pull single effect was searched",,'pull_ability');
 
+	PatchLimitBreak(AbilityTemplateManager.FindAbilityTemplate('DP_LimitBreak'));
+	PatchLastStand(AbilityTemplateManager.FindAbilityTemplate('ShadowOps_LastStand'));
+
 	AddLootTables();
 
 	PatchAbilityForBotnet('PistolStandardShot');
@@ -741,6 +744,22 @@ static function FixSidewinderSMGs(Name TemplateName)
 		{
 			Template.strImage = "img:///LWSidewinderSMG.LWBeamSMG_Common";
 		}
+	}
+}
+
+static function PatchLimitBreak(X2AbilityTemplate Template)
+{
+	if(Template != none)
+	{
+		Template.PrerequisiteAbilities.AddItem('NOT_ShadowOps_LastStand');
+	}
+}
+
+static function PatchLastStand(X2AbilityTemplate Template)
+{
+	if (Template != none)
+	{
+		Template.PrerequisiteAbilities.AddItem('NOT_DP_LimitBreak');
 	}
 }
 
