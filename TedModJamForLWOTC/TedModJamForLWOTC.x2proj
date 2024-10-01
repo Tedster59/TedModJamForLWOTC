@@ -70,6 +70,7 @@
     <Folder Include="Config\Combined Workshop and Lab" />
     <Folder Include="Config\Dynamic Deployment" />
     <Folder Include="Config\Fuller Override" />
+    <Folder Include="Config\Choose My Class" />
     <Folder Include="Config\Reliable Ever Vigilant" />
     <Folder Include="Config\Stormrider" />
     <Folder Include="Config\Zelfs assorted fixes" />
@@ -431,6 +432,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Celatid Alien\XComWeaponSkinReplacer.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Choose My Class\XComChooseMyClass.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Combined Workshop and Lab\XComCombiWorkLab.ini">
@@ -1081,6 +1085,9 @@
     <Content Include="Config\XComEncounterLists.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\XComEncounters.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComGameCore.ini">
       <SubType>Content</SubType>
     </Content>
@@ -1118,6 +1125,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComRepurposeAbilities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComSchedules.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComTedPsiOverhaul.ini">
