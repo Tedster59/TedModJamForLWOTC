@@ -1301,6 +1301,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Rainmaker.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_RequiemStuff.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ResistanceCommunications.uc">
       <SubType>Content</SubType>
     </Content>
@@ -1455,6 +1458,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_NotItsOwnTurn.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_NotUnlimitedAmmo.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Condition_WOTC_APA_ReaperHack.uc">
