@@ -20,54 +20,43 @@ static function bool CanAddItemToInventory_CH_Improved(out int bCanAddItem, cons
 {
 	local X2WeaponTemplate						WeaponTemplate;
 	local ABILITY_WEAPON_UNLOCK					AbilityUnlock;
+	local bool									OverrideNormalBehavior, DoNotOverrideNormalBehavior;
+
+	// Prepare return values to make it easier for us to read the code. Thanks Iridar!
+	OverrideNormalBehavior = CheckGameState != none;
+	DoNotOverrideNormalBehavior = CheckGameState == none;
 
 	WeaponTemplate = X2WeaponTemplate(ItemState.GetMyTemplate());
-	if(CheckGameState == none)
-	{
-		// If DisabledReason is not blank, then this template has already been disabled by another mod, ignore.
-		if (DisabledReason != "")
-			return true;
 
-		// If the template is normally allowed for this class, ignore
-		if (UnitState.GetSoldierClassTemplate().IsWeaponAllowedByClass(WeaponTemplate))
-			return true;
+	// If DisabledReason is not blank, then this template has already been disabled by another mod, ignore.
+	if (DisabledReason != "")
+		return DoNotOverrideNormalBehavior;
 
-		foreach default.ABILITY_WEAPON_UNLOCKS(AbilityUnlock)
-		{
-			if (UnitState.HasSoldierAbility(AbilityUnlock.ABILITY_NAME))
-			{
-				if (WeaponTemplate.WeaponCat == AbilityUnlock.WEAPON_CATEGORY)
-				{
-					// Unit has an ability enabling this weapon template, allow
-					DisabledReason = "";
-					return false;
-		}	}	}
-		return true;
-	}
-	return CanAddItemToInventory(bCanAddItem, Slot, ItemTemplate, Quantity, UnitState, CheckGameState);	
-}
-
-static private function bool CanAddItemToInventory(out int bCanAddItem, const EInventorySlot Slot, const X2ItemTemplate ItemTemplate, int Quantity, XComGameState_Unit UnitState, XComGameState CheckGameState)
-{
-	local X2WeaponTemplate						WeaponTemplate;
-	local ABILITY_WEAPON_UNLOCK					AbilityUnlock;
-
-	bCanAddItem = 0;
-	WeaponTemplate = X2WeaponTemplate(ItemTemplate);
-	
 	// If the template is normally allowed for this class, ignore
-	if (UnitState.GetSoldierClassTemplate().IsWeaponAllowedByClass(WeaponTemplate))
-		return false;
+	//class can use this weapon natively, no need for us to enable it
+	if(UnitState.GetSoldierClassTemplate().IsWeaponAllowedByClass(WeaponTemplate))
+	{
+		return DoNotOverrideNormalBehavior;
+	}
 
 	foreach default.ABILITY_WEAPON_UNLOCKS(AbilityUnlock)
 	{
-		if (UnitState.HasSoldierAbility(AbilityUnlock.ABILITY_NAME))
+		if (UnitState.HasAbilityFromAnySource(AbilityUnlock.ABILITY_NAME))
 		{
 			if (WeaponTemplate.WeaponCat == AbilityUnlock.WEAPON_CATEGORY)
 			{
+				DisabledReason = "";
+
 				// Unit has an ability enabling this weapon template, allow
-				bCanAddItem = 1;
-				break;
-	}	}	}
-	return bCanAddItem > 0;
+				if (UnitState.GetItemInSlot(Slot, CheckGameState) == none)
+				{
+					bCanAddItem = 1;
+				}
+
+				return OverrideNormalBehavior;
+			}
+		}
+	}
+
+	return DoNotOverrideNormalBehavior;
 }
