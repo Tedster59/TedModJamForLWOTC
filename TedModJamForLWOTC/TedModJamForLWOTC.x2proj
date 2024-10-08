@@ -1301,6 +1301,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_Rainmaker.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_RenewalProtocol.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_RequiemStuff.uc">
       <SubType>Content</SubType>
     </Content>
