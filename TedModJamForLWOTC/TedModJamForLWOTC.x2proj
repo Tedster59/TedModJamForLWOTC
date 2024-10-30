@@ -71,6 +71,8 @@
     <Folder Include="Config\Dynamic Deployment" />
     <Folder Include="Config\Fuller Override" />
     <Folder Include="Config\Choose My Class" />
+    <Folder Include="Config\Big Things Don%27t Get Hugs" />
+    <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
     <Folder Include="Config\Stormrider" />
     <Folder Include="Config\Zelfs assorted fixes" />
@@ -351,6 +353,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Bayonets\XComLW_InfiltrationSettings.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Big Things Don%27t Get Hugs\XComGame.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Bio Division 2.0\XComAI.ini">
@@ -921,6 +926,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Scouting Protocol\XComScoutingProtocolWOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Shadow Ops Perk Pack\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Shadow Ops Perk Pack\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Shadow Ops Perk Pack\XComShadowOps.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Spark Arsenal\XComAbilityEditor.ini">
