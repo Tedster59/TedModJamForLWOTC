@@ -72,6 +72,7 @@
     <Folder Include="Config\Fuller Override" />
     <Folder Include="Config\Choose My Class" />
     <Folder Include="Config\Big Things Don%27t Get Hugs" />
+    <Folder Include="Config\Extra Damage Patcher" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
     <Folder Include="Config\Stormrider" />
@@ -566,6 +567,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Explosives Destroy Corpses\XComEDC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Extra Damage Patcher\XComZelfExtraDamagePatcher.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Flame Viper\XComAI.ini">
