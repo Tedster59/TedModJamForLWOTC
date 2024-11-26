@@ -1,6 +1,6 @@
 // This is an Unreal Script
 
-class OPTFC_AshDeathsEmbrace extends X2DownloadableContentInfo;
+class OPTC_AshDeathsEmbrace extends X2DownloadableContentInfo;
 
 static event OnPostTemplatesCreated()
 {
