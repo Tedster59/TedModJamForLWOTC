@@ -73,6 +73,7 @@
     <Folder Include="Config\Choose My Class" />
     <Folder Include="Config\Big Things Don%27t Get Hugs" />
     <Folder Include="Config\Extra Damage Patcher" />
+    <Folder Include="Config\Ability Swapper" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
     <Folder Include="Config\Stormrider" />
@@ -101,6 +102,9 @@
     <Folder Include="Src\TedModJamForLWOTC\Classes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\Ability Swapper\XComZelfAbilitySwapper.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Ability To Slot Reassignment\XComAbilityToSlotReassignment.ini">
       <SubType>Content</SubType>
     </Content>
