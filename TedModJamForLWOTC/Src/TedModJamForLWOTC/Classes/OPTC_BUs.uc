@@ -20,6 +20,10 @@ static event OnPostTemplatesCreated()
 	AddBUTechCondition(AbilityTemplateManager.FindAbilityTemplate('RM_BrutalizeProtocol'), 'DummyNonexistantTech');
 	AddBUTechCondition(AbilityTemplateManager.FindAbilityTemplate('BrutalObliterator'), 'BU_All_Tier4_Tech');
 
+	AddBUTechCondition(AbilityTemplateManager.FindAbilityTemplate('M31_Botnet'), 'BU_Utility_Tier3_Tech');
+	AddBUTechCondition(AbilityTemplateManager.FindAbilityTemplate('Anatomy_LW'), 'BU_Firepower_Tier3_Tech');
+
+
 	CharacterTemplateManager = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
 
 	foreach default.IncludedTemplates (BUName)
