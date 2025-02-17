@@ -74,6 +74,7 @@
     <Folder Include="Config\Big Things Don%27t Get Hugs" />
     <Folder Include="Config\Extra Damage Patcher" />
     <Folder Include="Config\Ability Swapper" />
+    <Folder Include="Config\Supercharge and Singe" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
     <Folder Include="Config\Stormrider" />
@@ -1018,6 +1019,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Stormrider\XComRider.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Supercharge and Singe\XComSlagAndMelta.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\System Infiltration\XComHackerLaptop.ini">
