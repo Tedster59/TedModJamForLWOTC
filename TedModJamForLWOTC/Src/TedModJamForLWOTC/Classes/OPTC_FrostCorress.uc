@@ -35,7 +35,7 @@ static event OnPostTemplatesCreated()
 
 	if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModInactive('PlayableXCOM2AliensLWOTC'))
     {
-	AdjustFrostCorressAbilityActions(AbilityTemplateManager.FindAbilityTemplate('MZ_FDFrostCorress_M3'));
+		AdjustFrostCorressAbilityActions(AbilityTemplateManager.FindAbilityTemplate('MZ_FDFrostCorress_M3'));
 	}
 
 	AdjustFrostPurifierDeathExplosion(AbilityTemplateManager.FindAbilityTemplate('MZ_FDFrostPurifierDeathExplosion'));
