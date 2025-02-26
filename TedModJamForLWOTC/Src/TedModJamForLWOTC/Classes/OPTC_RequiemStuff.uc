@@ -1,18 +1,22 @@
 class OPTC_RequiemStuff extends X2DownloadableContentInfo;
 
+var config array<name> AbilitiesNotUsableWithUnlimitedAmmo;
+
 static event OnPostTemplatesCreated()
 {
-	local X2AbilityTemplateManager  AbilityTemplateManager;
+	local X2AbilityTemplateManager		AbilityTemplateManager;
+	local name							AbilityName;
 
 	AbilityTemplateManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
 
-	FixUnload(AbilityTemplateManager.FindAbilityTemplate('F_Unload'));
-	FixUnload(AbilityTemplateManager.FindAbilityTemplate('SoulReaper'));
-	FixUnload(AbilityTemplateManager.FindAbilityTemplate('ShadowOps_SlamFire'));
-	FixUnload(AbilityTemplateManager.FindAbilityTemplate('RM_OverclockCore'));
+	foreach default.AbilitiesNotUsableWithUnlimitedAmmo(AbilityName)
+	{
+		// None check in this helper
+		MakeNotWorkWithUnlimitedAmmoWeapons(AbilityTemplateManager.FindAbilityTemplate(AbilityName));
+	}
 }
 
-static function FixUnload(X2AbilityTemplate Template)
+static function MakeNotWorkWithUnlimitedAmmoWeapons(X2AbilityTemplate Template)
 {
 	if(Template != None)
 	{
