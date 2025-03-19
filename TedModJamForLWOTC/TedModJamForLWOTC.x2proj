@@ -988,6 +988,9 @@
     <Content Include="Config\Spark Arsenal\XComRestorativeMist.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\Spark Arsenal\XComSparkArsenal.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Spark Arsenal\XComTemplateEditor.ini">
       <SubType>Content</SubType>
     </Content>
