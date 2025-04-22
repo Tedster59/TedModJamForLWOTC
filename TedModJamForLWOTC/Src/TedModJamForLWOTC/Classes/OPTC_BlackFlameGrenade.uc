@@ -6,8 +6,6 @@ static event OnPostTemplatesCreated()
 {
 	local X2GrenadeTemplate					GrenadeTemplate;
 	local X2ItemTemplateManager				ItemTemplateMgr;
-	local X2Effect							Effect;
-	local X2Effect_ApplyWeaponDamage		WeaponDamageEffect;
 	local int idx;
 
 	ItemTemplateMgr = class'X2ItemTemplateManager'.static.GetItemTemplateManager();

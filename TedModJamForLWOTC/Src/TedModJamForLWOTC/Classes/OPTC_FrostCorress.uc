@@ -88,7 +88,6 @@ static function NotWhileBurningAbility(X2AbilityTemplate Template)
 
 static function AdjustFrostCorressAbility(X2AbilityTemplate Template)
 {
-	local X2Condition Condition;
     local X2Condition_UnitEffects UnitEffect;
 
     //  Check if the Ability Template was successfully found by the manager.

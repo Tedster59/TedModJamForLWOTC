@@ -18,6 +18,7 @@ static event OnPostTemplatesCreated()
 	local X2Effect_ApplyWeaponDamage		WeaponDamageEffect;
 
 	// Patch direct fire abilities
+	AbilityManager = class'x2AbilityTemplateManager'.static.GetAbilityTemplateManager();
 
 	foreach default.GuaranteedHitAbilities(TemplateName)
 	{

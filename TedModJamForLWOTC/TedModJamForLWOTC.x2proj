@@ -1405,6 +1405,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_ChemthrowerSuppression.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_LocalAndGlobalPlayer.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2AbilityCooldown_ScanningProtocol.uc">
       <SubType>Content</SubType>
     </Content>

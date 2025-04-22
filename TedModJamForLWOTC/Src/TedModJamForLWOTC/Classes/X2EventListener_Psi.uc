@@ -40,7 +40,6 @@ static function EventListenerReturn OnPsiProjectCompleted(
 	local XComGameState NewGameState;
 	local SCATProgression PsiAbility;
 	local array<SCATProgression> PsiAbilityDeck;
-	local X2SoldierClassTemplate ClassTemplate;
 	local int NumRanks, iRank, iBranch, idx;
 
 	Tuple = XComLWTuple(EventData);
