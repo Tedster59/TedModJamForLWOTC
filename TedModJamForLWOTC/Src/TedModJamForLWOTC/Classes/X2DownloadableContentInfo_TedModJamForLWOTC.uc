@@ -568,11 +568,17 @@ static event OnPostTemplatesCreated()
 	PatchLimitBreak(AbilityTemplateManager.FindAbilityTemplate('DP_LimitBreak'));
 	PatchLastStand(AbilityTemplateManager.FindAbilityTemplate('ShadowOps_LastStand'));
 
+	MakeAbilityNotWorkWhileConcealed('IRI_BH_Nightfall');
+	MakeAbilityNotWorkWhileConcealed('IRI_BH_ShadowTeleport');
+
 	AddLootTables();
 
 	PatchAbilityForBotnet('PistolStandardShot');
 
 	FixCouriers();
+
+	FixPACharacterGroups();
+
 	FixBotnet('StandardShot');
 	FixBotnet('SniperStandardFire');
 	FixBotnet('PistolStandardShot');
@@ -669,6 +675,27 @@ static function FixCouriers()
 	}
 }
 
+static function FixPACharacterGroups()
+{
+	local X2CharacterTemplateManager	CharacterMgr;
+	local X2DataTemplate				DataTemplate;
+	local X2CharacterTemplate			CharTemplate;
+
+
+	CharacterMgr = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
+
+	foreach CharacterMgr.IterateTemplates(DataTemplate)
+	{
+		CharTemplate = X2CharacterTemplate(DataTemplate);
+
+		if(CharTemplate != none && InStr(left(CharTemplate.DataName,3), "PA_") != INDEX_NONE && InStr(left(CharTemplate.CharacterGroupName,3), "PA_") == INDEX_NONE)
+		{
+			CharTemplate.CharacterGroupName = name("PA_" $ CharTemplate.DataName);
+		}
+	}
+
+}
+
 static function PatchAbilityForBotnet(name AbilityName)
 {
 	local X2AbilityTemplate Template;
@@ -679,6 +706,25 @@ static function PatchAbilityForBotnet(name AbilityName)
 	{
 		Template.AddTargetEffect(class'X2Ability_ShadowOpsCharge'.static.BotnetEffect());
 	}
+}
+
+static function MakeAbilityNotWorkWhileConcealed(name AbilityName)
+{
+	local X2AbilityTemplate Template;
+	local X2Condition_UnitProperty SuperConcealedCondition;
+
+	Template = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager().FindAbilityTemplate(AbilityName);
+
+	if (Template != none)
+	{
+		SuperConcealedCondition = new class'X2Condition_UnitProperty';
+		SuperConcealedCondition.IsConcealed = false;
+		SuperConcealedCondition.ExcludeConcealed = true;
+		SuperConcealedCondition.IsSuperConcealed = false;
+
+		Template.AbilityShooterConditions.AddItem(SuperConcealedCondition);
+	}
+
 }
 
 static function FixBotnet(name TemplateName)
