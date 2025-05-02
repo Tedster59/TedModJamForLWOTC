@@ -334,6 +334,9 @@
     <Content Include="Config\AP Grenades\XComLW_Overhaul.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\AP Grenades\XComTemplateEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Autopistol Overhaul\XComTemplateEditor.ini">
       <SubType>Content</SubType>
     </Content>
@@ -1133,6 +1136,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComImprovedHeavyTargeting.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComLW_Activities.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComLW_AlienPack.ini">
