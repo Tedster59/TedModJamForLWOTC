@@ -68,7 +68,7 @@ static function AdjustShadowstepAbility(X2AbilityTemplate Template)
     {
 		PersistentEffect = new class'X2Effect_CannotTargetShadowstep';
 		PersistentEffect.BuildPersistentEffect(1, true, false);
-		PersistentEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, true,, Template.AbilitySourceName);
+		//PersistentEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, true,, Template.AbilitySourceName);
 		Template.AddTargetEffect(PersistentEffect);
     }
 }
