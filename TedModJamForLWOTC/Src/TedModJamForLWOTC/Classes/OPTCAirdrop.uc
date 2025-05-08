@@ -38,4 +38,28 @@ static event OnPostTemplatesCreated()
 		TargetProperty.ExcludeAlien = false;
 		Template.AbilityTargetConditions.AddItem(TargetProperty);
     }
+
+	// Add Containment Field here too:
+
+	Template = AbilityTemplateManager.FindAbilityTemplate('MZGremlinStasis');
+
+	if (Template != none)
+    {
+		TargetProperty = new class'X2Condition_UnitProperty';
+		TargetProperty.ExcludeLargeUnits = true;
+
+		Template.AbilityTargetConditions.AddItem(TargetProperty);
+
+	}
+
+	Template = AbilityTemplateManager.FindAbilityTemplate('MZHostageProtocol');
+
+	if (Template != none)
+    {
+		TargetProperty = new class'X2Condition_UnitProperty';
+		TargetProperty.ExcludeLargeUnits = true;
+
+		Template.AbilityTargetConditions.AddItem(TargetProperty);
+
+	}
 }
