@@ -15,7 +15,7 @@ function bool DisablePOI(XComGameState_PointOfInterest POIState)
 {
 	return false;
 }
- 
+
 static function ModifyMJPOI(X2StrategyElementTemplate Template)
 {
 	local X2PointOfInterestTemplate POITemplate;
@@ -36,6 +36,12 @@ static function DisableDarkEvent(X2StrategyElementTemplate Template)
 
 	if(DETemplate != none)
 	{
-		DETemplate.CanActivateFn = DisablePOI;
+		DETemplate.CanActivateFn = DisableDE;
 	}
 }
+
+function bool DisableDE(XComGameState_DarkEvent DarkEventState)
+{
+	return false;
+}
+ 
