@@ -1522,6 +1522,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_AreaSuppression.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_BonusGrenadeSlotUse_Fixed.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_CannotTargetChosen.uc">
       <SubType>Content</SubType>
     </Content>
