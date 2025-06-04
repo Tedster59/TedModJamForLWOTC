@@ -22,6 +22,12 @@ static event OnPostTemplatesCreated()
 	AdjustCCSAbility(AbilityTemplateManager.FindAbilityTemplate('DP_CQCSupremacyAttackSecondary'));
 	//AdjustAidProtocolAbility(AbilityTemplateManager.FindAbilityTemplate('AidProtocol'));
 	AdjustShadowstepAbility(AbilityTemplateManager.FindAbilityTemplate('Shadowstep'));
+
+	AdjustBreach(AbilityTemplateManager.FindAbilityTemplate('ShadowOps_Breach'));
+
+	AddBladestormTrigger(AbilityTemplateManager.FindAbilityTemplate('MZDogpileMeleeSlash'));
+	AddBladestormTrigger(AbilityTemplateManager.FindAbilityTemplate('MZReblossomAttack'));
+	AddBladestormTrigger(AbilityTemplateManager.FindAbilityTemplate('IRI_Rider_Intercept_Attack'));
 }
  
 static function AdjustCCSAbility(X2AbilityTemplate Template)
@@ -71,4 +77,26 @@ static function AdjustShadowstepAbility(X2AbilityTemplate Template)
 		//PersistentEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, true,, Template.AbilitySourceName);
 		Template.AddTargetEffect(PersistentEffect);
     }
+}
+
+// Tie Breech to the shotgun weapon cat used for Slug Shot
+static function AdjustBreach(X2AbilityTemplate Template)
+{
+	local X2Condition_UnitInventoryExpanded InventoryCondition;
+
+	if (Template != none)
+	{
+		InventoryCondition = new class'X2Condition_UnitInventoryExpanded';
+		InventoryCondition.RelevantSlot=eInvSlot_PrimaryWeapon;
+		InventoryCondition.RequireWeaponCategory = class'X2Ability_PerkPackAbilitySet'.default.SHOTGUN_WEAPONCATS;
+		Template.AbilityShooterConditions.AddItem(InventoryCondition);
+	}
+}
+
+static function AddBladestormTrigger(X2AbilityTemplate Template)
+{
+	if (Template != none)
+	{
+		Template.PostActivationEvents.AddItem('BladestormActivated');
+	}
 }
