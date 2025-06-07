@@ -15,6 +15,13 @@ static event OnPostTemplatesCreated ()
 	{
 		AbilityTemplate.BuildVisualizationFn = GremlinSingleTargetWithRevive_BuildVisualization;
 	}
+
+	AbilityTemplate = AbilityTemplateManager.FindAbilityTemplate('ShadowOps_AdvancedShieldProtocol');
+
+	if(AbilityTemplate != NONE)
+	{
+		AbilityTemplate.PrerequisiteAbilities.AddItem('ShadowOps_ShieldProtocol');
+	}
 }
 
 
