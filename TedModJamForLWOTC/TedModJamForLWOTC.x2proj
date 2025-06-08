@@ -74,6 +74,7 @@
     <Folder Include="Config\Big Things Don%27t Get Hugs" />
     <Folder Include="Config\Extra Damage Patcher" />
     <Folder Include="Config\Ability Swapper" />
+    <Folder Include="Config\Buildable Units" />
     <Folder Include="Config\Supercharge and Singe" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
@@ -434,6 +435,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Bstar%27s Perk Pack\XComBstarsPerkPack.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Buildable Units\XComGameData_CharacterStats.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Celatid Alien\XComCelatidData.ini">
