@@ -311,6 +311,9 @@
     <Content Include="Config\Advent Warlock\XComGameData.ini">
       <SubType>Content</SubType>
     </Content>
+	<Content Include="Config\Advent Warlock\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Advent Warlock\XComGameData_CharacterStats.ini">
       <SubType>Content</SubType>
     </Content>
@@ -1293,6 +1296,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ChosenKidnap.uc">
+      <SubType>Content</SubType>
+    </Content>
+	<Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CursedEntourage.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CustodianMelee.uc">
