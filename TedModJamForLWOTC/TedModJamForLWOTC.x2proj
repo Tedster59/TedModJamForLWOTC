@@ -1340,6 +1340,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_NapalmProtocol.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_PlayableAliens.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_POI.uc">
       <SubType>Content</SubType>
     </Content>
