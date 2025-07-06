@@ -99,6 +99,7 @@
     <Folder Include="Config\Underbarrel Weapons\" />
     <Folder Include="Config\Wrecking Ball\" />
     <Folder Include="Localization\" />
+    <Folder Include="Content" />
     <Folder Include="Src\" />
     <Folder Include="Src\TedModJamForLWOTC\" />
     <Folder Include="Src\TedModJamForLWOTC\Classes\" />
@@ -1196,6 +1197,9 @@
     <Content Include="Config\Zelfs assorted fixes\XComZelfClassRequirementsBegone.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Content\UMS_CustodianEscortLoot.umap">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Localization\LatentPsionicsUnlock.int">
       <SubType>Content</SubType>
     </Content>
@@ -1404,6 +1408,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_X2Effect_AreaSuppression.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\SeqAct_AddLootToUnit.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\UIEventNoticesTactical_Ripple.uc">
@@ -1659,6 +1666,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Item_XComPurgeGun.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2SitrepEffect_TJSitreps.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2StatusEffects_RipplingRifle.uc">

@@ -575,7 +575,6 @@ static event OnPostTemplatesCreated()
 
 	PatchAbilityForBotnet('PistolStandardShot');
 
-	FixCouriers();
 
 	FixPACharacterGroups();
 
@@ -644,36 +643,6 @@ static function AdjustPullAbility(X2AbilityTemplate Template)
     }
 }
 
-
-static function FixCouriers()
-{
-	local X2CharacterTemplateManager	CharacterMgr;
-	local array<X2DataTemplate>			DataTemplates;
-	local X2DataTemplate				DataTemplate;
-	local X2CharacterTemplate			CharTemplate;
-	local LootReference					Loot;
-
-	CharacterMgr = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
-
-	CharacterMgr.FindDataTemplateAllDifficulties('Advent_Courier', DataTemplates);
-
-	foreach DataTemplates(DataTemplate)
-	{
-		CharTemplate = X2CharacterTemplate(DataTemplate);
-
-		if(CharTemplate != none)
-		{
-			Loot.ForceLevel = 0;
-			Loot.LootTableName = 'AdventCourier_BaseLoot';
-
-			CharTemplate.TimedLoot.LootReferences.Length = 0;
-			CharTemplate.VultureLoot.LootReferences.Length = 0;
-
-			CharTemplate.TimedLoot.LootReferences.AddItem(Loot);
-			CharTemplate.VultureLoot.LootReferences.AddItem(Loot);
-		}
-	}
-}
 
 static function FixPACharacterGroups()
 {
