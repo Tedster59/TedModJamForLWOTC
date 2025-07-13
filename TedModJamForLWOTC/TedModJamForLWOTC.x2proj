@@ -930,6 +930,9 @@
     <Content Include="Config\Rocket Launchers\XComGameBoard.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\Rocket Launchers\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Rocket Launchers\XComLW_InfiltrationSettings.ini">
       <SubType>Content</SubType>
     </Content>
