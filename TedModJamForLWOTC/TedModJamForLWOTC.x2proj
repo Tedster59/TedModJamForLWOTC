@@ -1197,6 +1197,9 @@
     <Content Include="Config\Zelfs assorted fixes\XComZelfClassRequirementsBegone.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Content\UILibrary_LWS_Heavy.upk">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\UMS_CustodianEscortLoot.umap">
       <SubType>Content</SubType>
     </Content>
@@ -1233,10 +1236,16 @@
     <Content Include="Config\XComEngine.ini" />
     <Content Include="Config\XComGame.ini" />
     <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\TedModJamForLWOTC\Classes\ArsonistAbilities.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\BitterfrostHelper.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\GrantWeaponWithAbility.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\HeavyAbilities.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\ImprovedHeavyTargetingLWOTC.uc">
