@@ -75,6 +75,7 @@
     <Folder Include="Config\Extra Damage Patcher" />
     <Folder Include="Config\Ability Swapper" />
     <Folder Include="Config\Buildable Units" />
+    <Folder Include="Config\Cryo Perk Pack" />
     <Folder Include="Config\Supercharge and Singe" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
@@ -466,6 +467,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Cost-Based Ability Colors\XComWOTC_CostBasedAbilityColors.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Cryo Perk Pack\XComMZPerkWeapons.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Custodian Pack\XcomAdvent_Courier.ini">
