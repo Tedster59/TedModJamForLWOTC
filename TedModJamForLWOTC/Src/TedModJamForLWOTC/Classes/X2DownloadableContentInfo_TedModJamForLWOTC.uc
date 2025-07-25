@@ -533,6 +533,8 @@ static function AddLootTables()
 static event OnPostTemplatesCreated()
 {
     local X2AbilityTemplateManager  AbilityTemplateManager;
+
+	`Log("TedJam Meta Mod Built July 25, 2025",,'TedLog');
  
     //Karen!!  Get the Ability Template Manager.
     AbilityTemplateManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
