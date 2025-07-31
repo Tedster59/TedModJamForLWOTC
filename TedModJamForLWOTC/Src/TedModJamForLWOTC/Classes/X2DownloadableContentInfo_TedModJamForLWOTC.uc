@@ -591,6 +591,8 @@ static event OnPostTemplatesCreated()
 	FixSidewinderSMGs('PA_SidewinderGunBeam');
 
 	ReplaceSchedules();
+
+	FixEverVigilantShadowOpsJank();
 }
  
 static function AdjustFlamethrowerAbility(X2AbilityTemplate Template)
@@ -894,4 +896,30 @@ static function bool UpdateMissionSpawningInfo(StateObjectReference MissionRef)
 	}
 
 	return false;
+}
+
+static function FixEverVigilantShadowOpsJank()
+{
+    local X2AbilityTemplateManager TemplateMgr;
+    local X2AbilityTemplate Template;
+    local int i;
+
+    if (class'Helpers_LW'.static.IsModInstalled("ShadowOpsPerkPack"))
+    {
+        TemplateMgr = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
+        Template = TemplateMgr.FindAbilityTemplate('EverVigilant');
+
+        Template.AbilityTriggers.Length = 0;
+        Template.AbilityTriggers.AddItem(new class'X2AbilityTrigger_UnitPostBeginPlay');
+
+        for (i = 0; i < Template.AbilityTargetEffects.Length; i++)
+        {
+            if (Template.AbilityTargetEffects[i].IsA('X2Effect_ActivateOverwatch'))
+            {
+                Template.AbilityTargetEffects.RemoveItem(Template.AbilityTargetEffects[i]);
+            }
+        }
+
+        Template.AbilityShooterConditions.Length = 0;
+    }
 }
