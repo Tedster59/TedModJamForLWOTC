@@ -31,6 +31,8 @@ static event OnPostTemplatesCreated()
                     WeaponDamageEffect.bExplosiveDamage = false;
                 }
             }
+
+		Template.HideIfResearched = '';
 	}
 
 	Template = X2GrenadeTemplate(ItemTemplateManager.FindItemTemplate('MZBitterFrostBomb'));
