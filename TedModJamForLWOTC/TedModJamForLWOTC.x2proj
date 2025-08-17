@@ -706,6 +706,9 @@
     <Content Include="Config\Gene Mods\XComGameData.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\Gene Mods\XComGeneMods.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Gene Mods\XComLW_Overhaul.ini">
       <SubType>Content</SubType>
     </Content>
