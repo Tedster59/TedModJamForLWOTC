@@ -1207,6 +1207,9 @@
     <Content Include="Config\Zelfs assorted fixes\XComZelfClassRequirementsBegone.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Content\ANIM_NewPsi.upk">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\UILibrary_LWS_Heavy.upk">
       <SubType>Content</SubType>
     </Content>
