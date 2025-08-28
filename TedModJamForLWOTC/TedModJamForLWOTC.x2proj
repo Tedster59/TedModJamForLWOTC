@@ -1171,6 +1171,9 @@
     <Content Include="Config\XComLW_Toolbox.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\XComMovePatch.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComPromotionUIMod.ini">
       <SubType>Content</SubType>
     </Content>
