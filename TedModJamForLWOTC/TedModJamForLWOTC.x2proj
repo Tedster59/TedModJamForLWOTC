@@ -76,6 +76,7 @@
     <Folder Include="Config\Ability Swapper" />
     <Folder Include="Config\Buildable Units" />
     <Folder Include="Config\Cryo Perk Pack" />
+    <Folder Include="Config\ABBA for LWOTC" />
     <Folder Include="Config\Supercharge and Singe" />
     <Folder Include="Config\Shadow Ops Perk Pack" />
     <Folder Include="Config\Reliable Ever Vigilant" />
@@ -106,6 +107,15 @@
     <Folder Include="Src\TedModJamForLWOTC\Classes\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Config\ABBA for LWOTC\XComABBA_AssaultRifle_Options.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\ABBA for LWOTC\XComABBA_MiscWeapons_Options.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\ABBA for LWOTC\XComABBA_SniperRifle_Options.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\Ability Swapper\XComZelfAbilitySwapper.ini">
       <SubType>Content</SubType>
     </Content>
@@ -313,7 +323,7 @@
     <Content Include="Config\Advent Warlock\XComGameData.ini">
       <SubType>Content</SubType>
     </Content>
-	<Content Include="Config\Advent Warlock\XComGame.ini">
+    <Content Include="Config\Advent Warlock\XComGame.ini">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\Advent Warlock\XComGameData_CharacterStats.ini">
@@ -1327,7 +1337,7 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ChosenKidnap.uc">
       <SubType>Content</SubType>
     </Content>
-	<Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CursedEntourage.uc">
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CursedEntourage.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CustodianMelee.uc">
