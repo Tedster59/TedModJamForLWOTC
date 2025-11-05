@@ -18,6 +18,8 @@ var config array<MissionDefinition> ReplacementMissionDefs;
 
 var config bool IMMOLATOR_DESTROYSLOOT;
 
+var config array<name> HiddenUnitsToFix;
+
 /// <summary>
 /// This method is run if the player loads a saved game that was created prior to this DLC / Mod being installed, and allows the 
 /// DLC / Mod to perform custom processing in response. This will only be called once the first time a player loads a save that was
@@ -591,6 +593,7 @@ static event OnPostTemplatesCreated()
 	FixSidewinderSMGs('PA_SidewinderGunBeam');
 
 	ReplaceSchedules();
+	PatchInvisibleUnits();
 
 	FixEverVigilantShadowOpsJank();
 }
@@ -664,6 +667,33 @@ static function FixPACharacterGroups()
 		if(CharTemplate != none && InStr(left(CharTemplate.DataName,3), "PA_") != INDEX_NONE && InStr(left(CharTemplate.CharacterGroupName,3), "PA_") == INDEX_NONE)
 		{
 			CharTemplate.CharacterGroupName = name("PA_" $ CharTemplate.DataName);
+		}
+	}
+
+}
+
+static function PatchInvisibleUnits()
+{
+	local X2CharacterTemplateManager CharacterTemplateManager;
+	local name UnitName;
+	local X2CharacterTemplate Template;
+	local array<X2DataTemplate> DataTemplateAllDifficulties;
+	local X2DataTemplate DataTemplate;
+
+	CharacterTemplateManager = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
+
+	foreach default.HiddenUnitsToFix (UnitName)
+	{
+		CharacterTemplateManager.FindDataTemplateAllDifficulties(UnitName, DataTemplateAllDifficulties);
+
+		foreach DataTemplateAllDifficulties (DataTemplate)
+		{
+			Template = X2CharacterTemplate(DataTemplate);
+
+			if(Template != none)
+			{
+				Template.bHideInShadowChamber = false;
+			}
 		}
 	}
 
