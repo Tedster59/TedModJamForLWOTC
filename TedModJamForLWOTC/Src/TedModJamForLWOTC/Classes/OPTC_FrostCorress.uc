@@ -19,9 +19,7 @@ static event OnPostTemplatesCreated()
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('AcidBlob'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('MZ_FDAndromedonFrostBlob'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('BioShieldBash'));
-	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('AdvBioShieldDeflect'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('MZ_FDFrostAxeSlash'));
-	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('Avenger_LW'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('CommandoEnergyShield'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('CommandoEnergyShieldMk2'));
 	AdjustFrostCorressAbility(AbilityTemplateManager.FindAbilityTemplate('CommandoEnergyShieldMk3'));
