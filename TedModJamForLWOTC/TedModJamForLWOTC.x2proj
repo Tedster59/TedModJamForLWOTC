@@ -1599,6 +1599,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_DefendingDamage.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_DeflectEx_Updated.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Effect_GrantCharges.uc">
       <SubType>Content</SubType>
     </Content>
