@@ -592,6 +592,11 @@ static event OnPostTemplatesCreated()
 	FixSidewinderSMGs('PA_SidewinderGunCoil');
 	FixSidewinderSMGs('PA_SidewinderGunBeam');
 
+
+	FixImmolators('MZImmolator_CV');
+	FixImmolators('MZImmolator_MG');
+	FixImmolators('MZImmolator_BM');
+
 	ReplaceSchedules();
 	PatchInvisibleUnits();
 
@@ -792,6 +797,36 @@ static function FixSidewinderSMGs(Name TemplateName)
         if(Template != none)
 		{
 			Template.strImage = "img:///LWSidewinderSMG.LWBeamSMG_Common";
+		}
+	}
+}
+
+static function FixImmolators(Name TemplateName)
+{
+	 local X2ItemTemplateManager    ItemMgr;
+     local array<X2DataTemplate>    DataTemplates;
+     local X2DataTemplate       DataTemplate;
+     local X2WeaponTemplate     Template;
+	 local int i;
+
+     ItemMgr = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
+     ItemMgr.FindDataTemplateAllDifficulties(TemplateName, DataTemplates);
+
+     foreach DataTemplates(DataTemplate)
+     {
+        Template = X2WeaponTemplate(DataTemplate);
+
+        if(Template != none)
+		{
+			Template.BaseDamage.DamageType = 'Napalm';
+
+			for (i = 0; i < Template.ExtraDamage.Length; i++)
+			{
+				if(Template.ExtraDamage[i].DamageType == 'Fire')
+				{
+					Template.ExtraDamage[i].DamageType = 'Napalm';
+				}
+			}
 		}
 	}
 }
