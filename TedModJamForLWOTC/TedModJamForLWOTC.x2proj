@@ -753,9 +753,6 @@
     <Content Include="Config\Immolator + Chemthrower Abilities\XComMZChemthrower.ini">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Config\Immolator + Chemthrower Abilities\XComTemplateEditor.ini">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Config\Immolator Overhaul\XComAuxiliaryWeapons.ini">
       <SubType>Content</SubType>
     </Content>
