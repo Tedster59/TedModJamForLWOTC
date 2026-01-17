@@ -601,6 +601,10 @@ static event OnPostTemplatesCreated()
 	PatchInvisibleUnits();
 
 	FixEverVigilantShadowOpsJank();
+
+	FixRoutStuff();
+
+	FixChaoticMind();
 }
  
 static function AdjustFlamethrowerAbility(X2AbilityTemplate Template)
@@ -987,4 +991,42 @@ static function FixEverVigilantShadowOpsJank()
 
         Template.AbilityShooterConditions.Length = 0;
     }
+}
+
+
+static function FixRoutStuff()
+{
+    local X2AbilityTemplateManager TemplateMgr;
+    local X2AbilityTemplate Template;
+
+    TemplateMgr = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
+    Template = TemplateMgr.FindAbilityTemplate('IRI_Rider_InterceptAbility_Return');
+
+	if(Template != none)
+	{
+		Template.bUniqueSource = true;
+	}
+
+	Template = TemplateMgr.FindAbilityTemplate('IRI_Rider_MassIntercept');
+
+	if(Template != none)
+	{
+		Template.AdditionalAbilities.AddItem('IRI_Rider_InterceptAbility_Return');
+	}
+
+}
+
+static function FixChaoticMind()
+{
+    local X2AbilityTemplateManager TemplateMgr;
+    local X2AbilityTemplate Template;
+
+
+    TemplateMgr = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
+    Template = TemplateMgr.FindAbilityTemplate('IRI_ChaoticMind');
+
+	if(Template != none)
+	{
+		Template.ConcealmentRule = eConceal_Always;
+	}
 }
