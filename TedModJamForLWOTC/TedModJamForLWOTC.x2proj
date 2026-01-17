@@ -1230,6 +1230,9 @@
     <Content Include="Content\ANIM_NewPsi.upk">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Content\FX_HALON_Dev_03.upk">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Content\UILibrary_LWS_Heavy.upk">
       <SubType>Content</SubType>
     </Content>
