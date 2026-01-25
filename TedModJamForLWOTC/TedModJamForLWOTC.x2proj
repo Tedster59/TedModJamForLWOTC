@@ -1176,6 +1176,9 @@
     <Content Include="Config\XComLW_AlienPack.ini">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Config\XComLW_FactionBalance.ini">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Config\XComLW_Outposts.ini">
       <SubType>Content</SubType>
     </Content>
