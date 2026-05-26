@@ -35,6 +35,7 @@ static event OnPostTemplatesCreated()
 	AdjustAreaSuppressionEffectAbility(AbilityTemplateManager.FindAbilityTemplate('SparkMZCryoLauncher'));
 	AdjustAreaSuppressionEffectAbility(AbilityTemplateManager.FindAbilityTemplate('SoulMania'));
 	AdjustAreaSuppressionEffectAbility(AbilityTemplateManager.FindAbilityTemplate('SoulManiaAttack'));
+	AdjustAreaSuppressionEffectAbility(AbilityTemplateManager.FindAbilityTemplate('BioBlasterLauncher'));
 }
  
 static function AdjustAreaSuppressionEffectAbility(X2AbilityTemplate Template)
