@@ -30,7 +30,7 @@ static function X2AbilityTemplate SealedUndersuit_LW()
 	//DamageImmunity.ImmuneTypes.AddItem('Poison');
 	DamageImmunity.ImmuneTypes.AddItem('Acid');
 	//DamageImmunity.ImmuneTypes.AddItem('Frost');
-	DamageImmunity.ImmuneTypes.AddItem('ViperCrush');
+	//DamageImmunity.ImmuneTypes.AddItem('ViperCrush');
 	//DamageImmunity.ImmuneTypes.AddItem('Fire');
 	DamageImmunity.ImmuneTypes.AddItem('EleriumPoisoning');
 	DamageImmunity.ImmuneTypes.AddItem(class'X2Item_DefaultDamageTypes'.default.KnockbackDamageType);
