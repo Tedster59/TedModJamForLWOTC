@@ -1351,6 +1351,8 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CurbInfiniteActionEconomy.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CursedEntourage.uc">
       <SubType>Content</SubType>
     </Content>
