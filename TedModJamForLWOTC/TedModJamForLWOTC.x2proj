@@ -1551,6 +1551,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Ability_XComBioShield.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\X2Action_Airstrike.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\TedModJamForLWOTC\Classes\X2Character_CryoPriestM1.uc">
       <SubType>Content</SubType>
     </Content>
