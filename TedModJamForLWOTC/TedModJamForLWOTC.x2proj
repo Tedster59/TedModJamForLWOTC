@@ -1350,6 +1350,7 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_ChosenKidnap.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CurbInfiniteActionEconomy.uc">
     <Content Include="Src\TedModJamForLWOTC\Classes\OPTC_CursedEntourage.uc">
       <SubType>Content</SubType>
     </Content>

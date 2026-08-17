@@ -38,6 +38,7 @@ static function CHEventListenerTemplate CreateRNFListeners()
 	`CREATE_X2TEMPLATE(class'CHEventListenerTemplate', Template, 'TedJamReinforcementListeners');
 	Template.AddCHEvent('GetReinforcementValue', GetInfilReinforcementValue, ELD_Immediate);
 	Template.AddCHEvent('PlayerTurnEnded', RollForPerTurnWillLossUnderinfil, ELD_OnStateSubmitted, 90);
+	Template.AddCHEvent('SlamFire', class'X2EventListener_Soldiers'.static.OnSerialKill, ELD_OnStateSubmitted);
 
 	Template.RegisterInStrategy = false;
 	Template.RegisterInTactical = True;
