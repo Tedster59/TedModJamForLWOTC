@@ -4,3 +4,6 @@ TJPsiRippleFriendlyDesc="Psionically rippling units take damage over time and ca
 TJPsiRippleEffectAcquiredString="<XGParam:StrValue0/!UnitName/> is psionically rippling."
 TJPsiRippleEffectTickedString="<XGParam:StrValue0/!UnitName/> is still psionically rippling."
 TJPsiRippleEffectLostString="<XGParam:StrValue0/!UnitName/> is no longer psionically rippling."
+
+[X2Item_XComBioStunLance]
+strDisorientChanceLabel = "DISORIENTATION CHANCE"
