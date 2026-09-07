@@ -1854,6 +1854,9 @@
     <Content Include="Src\TedModJamForLWOTC\Classes\X2StrategyElement_WraithVestProject.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\TedModJamForLWOTC\Classes\XMBAbility_XMBStuff.uc">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
