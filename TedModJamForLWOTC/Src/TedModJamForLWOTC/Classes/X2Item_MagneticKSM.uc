@@ -29,10 +29,10 @@ static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Templates;
 
-    //if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('WOTCMoreSparkWeapons'))
-    //{
+    if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('WOTCMoreSparkWeapons'))
+    {
 	Templates.AddItem(CreateItem_MagneticStrikeModule());
-	//}
+	}
 
 	return Templates;
 }

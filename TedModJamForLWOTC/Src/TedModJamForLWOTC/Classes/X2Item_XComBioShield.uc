@@ -9,11 +9,11 @@ static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Weapons;
 
-	//if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
-	//{
+	if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
+	{
 	Weapons.AddItem(XComBioShield());
 	Weapons.AddItem(XComBioShield_BM());
-	//}
+	}
 
 	return Weapons;
 }

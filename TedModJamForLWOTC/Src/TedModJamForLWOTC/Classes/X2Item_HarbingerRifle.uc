@@ -12,11 +12,11 @@ static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> Templates;
 
-    //if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('AdventSniper_WoTC'))
-    //{
+    if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('AdventSniper_WoTC'))
+    {
 	Templates.AddItem(CreateTemplate_HarbingerRifle());
 	Templates.AddItem(CreateTemplate_HarbingerRifle_BM());
-	//}
+	}
 
 	return Templates;
 }

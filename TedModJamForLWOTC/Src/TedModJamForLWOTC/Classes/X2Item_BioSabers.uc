@@ -11,12 +11,12 @@ static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> ModWeapons;
 
-    //if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
-    //{
+    if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
+    {
 	ModWeapons.AddItem(CreateTemplate_AdvBioSaberM1());
 	ModWeapons.AddItem(CreateTemplate_XComBioSaber());
 	ModWeapons.AddItem(CreateTemplate_XComBioSaber_BM());
-	//}
+	}
 	
 	return ModWeapons;
 }

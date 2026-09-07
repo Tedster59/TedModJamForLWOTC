@@ -31,11 +31,11 @@ static function array<X2DataTemplate> CreateTemplates()
 {
 	local array<X2DataTemplate> ModWeapons;
 
-	//if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
-	//{
+	if (class'X2DownloadableContentInfo_TedModJamForLWOTC'.static.IsModActive('BioDivision'))
+	{
 	ModWeapons.AddItem(CreateTemplate_XComBioStunLance());
 	ModWeapons.AddItem(CreateTemplate_XComBioStunLance_MG());
-	//}
+	}
 
 	return ModWeapons;
 }
