@@ -447,6 +447,30 @@ static function AddTechGameStates()
         NewGameState.CreateNewStateObject(class'XComGameState_Tech', TechTemplate);
     }
 
+	if ( !IsResearchInHistory('CerebralPlatingProject') )
+    {
+        TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('CerebralPlatingProject'));
+        NewGameState.CreateNewStateObject(class'XComGameState_Tech', TechTemplate);
+    }
+
+	if ( !IsResearchInHistory('ReflexPlatingProject') )
+    {
+        TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('ReflexPlatingProject'));
+        NewGameState.CreateNewStateObject(class'XComGameState_Tech', TechTemplate);
+    }
+
+	if ( !IsResearchInHistory('FrostPlatingProject') )
+    {
+        TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('FrostPlatingProject'));
+        NewGameState.CreateNewStateObject(class'XComGameState_Tech', TechTemplate);
+    }
+
+	if ( !IsResearchInHistory('ChameleonPlatingProject') )
+    {
+        TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('ChameleonPlatingProject'));
+        NewGameState.CreateNewStateObject(class'XComGameState_Tech', TechTemplate);
+    }
+
     if( NewGameState.GetNumGameStateObjects() > 0 )
     {
         //Commit the state change into the history.
