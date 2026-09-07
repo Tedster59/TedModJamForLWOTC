@@ -536,7 +536,7 @@ static event OnPostTemplatesCreated()
 {
     local X2AbilityTemplateManager  AbilityTemplateManager;
 
-	`Log("TedJam Meta Mod Built July 25, 2025",,'TedLog');
+	`Log("TedJam Meta Mod Built September 7, 2026",,'TedLog');
  
     //Karen!!  Get the Ability Template Manager.
     AbilityTemplateManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
