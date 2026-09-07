@@ -69,17 +69,25 @@ static function X2DataTemplate CreateAmmoTemplate_HollowPointRounds(name Templat
 {
 	local X2AmmoTemplate Template;
 	local WeaponDamageValue DamageValue;
+	local X2Condition_UnitProperty		Condition;
 
 	`CREATE_X2TEMPLATE(class'X2AmmoTemplate', Template, TemplateName);
 	Template.strImage = "img:///NelVlesis_Overrides.Items.highqualityround";
 	Template.EquipSound = "StrategyUI_Ammo_Equip";
 	Template.ModClipSize = 0;
 
-	Template.Abilities.AddItem('HollowPointRoundsPierce');
+	//Template.Abilities.AddItem('HollowPointRoundsPierce');
 
 	DamageValue.Damage = 1;
     DamageValue.DamageType = 'Projectile_Conventional';
-    Template.AddAmmoDamageModifier(none, DamageValue);
+
+	Condition = new class'X2Condition_UnitProperty';
+	Condition.IsAdvent = true;
+	Condition.ExcludeRobotic = true;
+	Condition.ExcludeAlien = true;
+	Condition.FailOnNonUnits = true;
+
+    Template.AddAmmoDamageModifier(Condition, DamageValue);
 	
 	Template.SetUIStatMarkup(class'XLocalizedData'.default.DamageBonusLabel, , 1);
 	
