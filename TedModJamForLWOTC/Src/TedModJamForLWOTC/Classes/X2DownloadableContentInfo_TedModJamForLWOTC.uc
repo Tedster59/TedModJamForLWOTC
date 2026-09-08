@@ -1054,3 +1054,28 @@ static function FixChaoticMind()
 		Template.ConcealmentRule = eConceal_Always;
 	}
 }
+
+
+static function bool AbilityTagExpandHandler(string InString, out string OutString)
+{
+	local name Type;
+
+	Type = name(InString);
+	switch (Type)
+	{
+        case 'CHAMELEON_PLATING_DODGE_BONUS':
+			OutString = string(class'X2Ability_TJPlating'.default.CHAMELEON_PLATING_DODGE_BONUS);
+			return true;
+        case 'REFLEX_PLATING_DEFENSE':
+			OutString = string(class'X2Ability_TJPlating'.default.REFLEX_PLATING_DEFENSE);
+			return true;
+        case 'REFLEX_PLATING_DODGE':
+			OutString = string(class'X2Ability_TJPlating'.default.REFLEX_PLATING_DODGE);
+			return true;
+        case 'CHAMELEON_PLATING_DODGE_BONUS':
+			OutString = string(class'X2Ability_TJPlating'.default.CHAMELEON_PLATING_DODGE_BONUS);
+			return true;
+    }
+
+    return false;
+}

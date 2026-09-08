@@ -107,6 +107,7 @@ static function X2AbilityTemplate FrostPlatingBonus_LW()
 	DamageImmunity = new class'X2Effect_DamageImmunity';
 	DamageImmunity.BuildPersistentEffect(1, true, false, true);
 	DamageImmunity.ImmuneTypes.AddItem('Frost');
+	DamageImmunity.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, , , Template.AbilitySourceName);
 	DamageImmunity.EffectName = 'FrostPlatingBonusDamageImmunityEffect';
 	Template.AddTargetEffect(DamageImmunity);
 
@@ -121,7 +122,7 @@ static function X2AbilityTemplate ChameleonPlatingBonus_LW()
 	local X2Effect_PersistentStatChange		PersistentStatChangeEffect;
 
 	`CREATE_X2ABILITY_TEMPLATE(Template, 'ChameleonPlatingBonus_LW');
-	Template.IconImage = "img:///UILibrary_LWOTC.InventoryArt.Inv_Tarantula_Suit_512";
+	Template.IconImage = "img:///UILibrary_SODragoon.UIPerk_inspiration";
 
 	Template.AbilitySourceName = 'eAbilitySource_Item';
 	Template.eAbilityIconBehaviorHUD = EAbilityIconBehavior_NeverShow;
@@ -136,7 +137,7 @@ static function X2AbilityTemplate ChameleonPlatingBonus_LW()
 	//
 	PersistentStatChangeEffect = new class'X2Effect_PersistentStatChange';
 	PersistentStatChangeEffect.BuildPersistentEffect(1, true, false, false);
-	PersistentStatChangeEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, false, , Template.AbilitySourceName);
+	PersistentStatChangeEffect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyLongDescription(), Template.IconImage, , , Template.AbilitySourceName);
 	PersistentStatChangeEffect.AddPersistentStatChange(eStat_Dodge, default.CHAMELEON_PLATING_DODGE_BONUS);
 	Template.AddTargetEffect(PersistentStatChangeEffect);
 
