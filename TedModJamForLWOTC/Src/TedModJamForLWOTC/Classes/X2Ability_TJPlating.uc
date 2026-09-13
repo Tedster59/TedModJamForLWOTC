@@ -83,6 +83,8 @@ static function X2AbilityTemplate ReflexPlatingBonus_LW()
     Effect.SetDisplayInfo(ePerkBuff_Passive, Template.LocFriendlyName, Template.GetMyHelpText(), Template.IconImage,,, Template.AbilitySourceName);
     Template.AddTargetEffect(Effect);
 
+	Template.BuildNewGameStateFn = TypicalAbility_BuildGameState;
+
     return Template;
 }
 
